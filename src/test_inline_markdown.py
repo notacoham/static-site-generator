@@ -158,8 +158,8 @@ class TestInlineMarkdown(unittest.TestCase):
             new_nodes,
         )
 
-        def test_text_to_textnodes(self):
-            nodes = text_to_textnodes(
+        def test_text_to_text_nodes(self):
+            nodes = text_to_text_nodes(
                 "This is **text** with an _italic_ word and a `code block` and an ![image](https://i.imgur.com/zjjcJKZ.png) and a [link](https://boot.dev)"
             )
             self.assertListEqual(
